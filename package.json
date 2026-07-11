@@ -1,0 +1,14 @@
+{
+  "name": "freda-ops-cockpit-root",
+  "version": "0.2.40",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "cd server && npm install --no-audit --no-fund",
+    "start": "node server/server.js",
+    "render-build": "cd server && npm install --no-audit --no-fund && npx playwright install chromium"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
